@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="captcha-wrapper">
+        <div id="captcha">
+            <div id="captcha-img-code" oncopy="return false">
+            </div>
+            <div id="captha-input-wrap">
+                <input type="text" id="enter" onpaste="return false" oncopy="return false">
+            </div>
+            <div id="newCaptcha">
+                <button id="btn-captcha">
+                    Enter Captcha
+                </button>
+            </div>
+            <div id="info">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
