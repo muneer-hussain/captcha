@@ -16,13 +16,20 @@ for (let i = 0; i < 6; i++) {
 }
 
 
-captchaBtn.addEventListener("click", function() {
-    if (captchaEnter.value === captcha.innerText) {
+captchaBtn.addEventListener("click", getCaptcha)
+     
+     function getCaptcha(){
+       if (captchaEnter.value === captcha.innerText) {
         captchaInfo.innerText = match;
         captchaInfo.style.color = "green";
     } else if (captchaEnter.value != captcha.innerText) {
         captchaInfo.innerText = notMatch;
         captchaInfo.style.color = "red";
-
     }
-})
+}
+   
+window.addEventListener("keydown", (e) => { 
+if (e.keyCode == 13) { 
+getCaptcha();
+ } 
+});
